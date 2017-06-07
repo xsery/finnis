@@ -11,8 +11,8 @@ public class Player : MonoBehaviour {
     public Transform verificaParede;
 
     private bool estaAndando;
-    private bool estaNoChao;
-    private bool estaNaParede;
+    public bool estaNoChao;
+    public bool estaNaParede;
     private bool estaVivo;
     private bool foiDescoberto;
     private bool estaDormindo;
@@ -41,6 +41,7 @@ public class Player : MonoBehaviour {
 	void Update () {
         estaNoChao = Physics2D.OverlapCircle(verificaChao.position, raioValidaChao, solido);
         estaNaParede = Physics2D.OverlapCircle(verificaParede.position, raioValidaParede, solido);
+        
 
         if (estaVivo)
         {
@@ -90,8 +91,8 @@ public class Player : MonoBehaviour {
         an.SetBool("Pulando", !estaNoChao);
         an.SetFloat("VelVertical", rd.velocity.y);
         an.SetBool("Morrendo", !estaVivo);
-        an.SetBool("Descoberta", !foiDescoberto);
-        an.SetBool("Acordando", !estaDormindo);
+        an.SetBool("Descoberta", foiDescoberto);
+        an.SetBool("Acordando", estaDormindo);
     }
 
     void OnDrawGizmosSelected()
