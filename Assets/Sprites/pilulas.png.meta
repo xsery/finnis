@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 55aa5e04f198fcc4aac5995f700fa282
-timeCreated: 1496971893
+guid: ab7ffdcdf01f52e40ae6b5aaac22f946
+timeCreated: 1496977779
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: itens_0
-    21300002: itens_1
-    21300004: itens_2
+    21300000: pilulas_0
+    21300002: pilulas_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -81,41 +80,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: itens_0
+      name: pilulas_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 519
-        width: 876
+        x: 1
+        y: 70
+        width: 98
         height: 42
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: itens_1
+      name: pilulas_1
       rect:
         serializedVersion: 2
-        x: 422
-        y: 255
-        width: 200
-        height: 201
-      alignment: 9
-      pivot: {x: 0.51, y: 0.49}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: itens_2
-      rect:
-        serializedVersion: 2
-        x: 32
+        x: 4
         y: 0
-        width: 338
-        height: 212
-      alignment: 9
-      pivot: {x: 0.49, y: 0}
+        width: 95
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
