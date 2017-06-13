@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: a56506c13d477cc438bf89ca46acbf97
-timeCreated: 1497213227
+timeCreated: 1497304094
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: enfermeirazumbi-sheet0_0
+    21300002: enfermeirazumbi-sheet0_1
+    21300004: enfermeirazumbi-sheet0_2
+    21300006: enfermeirazumbi-sheet0_3
+    21300008: enfermeirazumbi-sheet0_4
+    21300010: enfermeirazumbi-sheet0_5
+    21300012: enfermeirazumbi-sheet0_6
+    21300014: enfermeirazumbi-sheet0_7
+    21300016: enfermeirazumbi-sheet0_8
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -12,6 +21,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -27,14 +38,17 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -58,10 +72,161 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 510
+        width: 212
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 510
+        width: 222
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_2
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 535
+        width: 204
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_3
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 535
+        width: 197
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 199
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 65
+        width: 192
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 355
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_7
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 44
+        width: 197
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enfermeirazumbi-sheet0_8
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 44
+        width: 197
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
