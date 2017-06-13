@@ -34,7 +34,24 @@ public class FinnisMovement : MonoBehaviour {
 
 		if (Input.GetButtonDown ("Jump") && grounded) {
 			jump = true;
-			//anim.SetBool ("Jump", true);
+		}
+
+		if (rb2d.velocity.y != 0f && rb2d.velocity.x == 0f) {
+			anim.SetBool ("Idle", false);
+			anim.SetBool ("Jump", true);
+			anim.SetBool ("Walk", false);
+		}
+
+		if (rb2d.velocity == Vector2.zero) {
+			anim.SetBool ("Idle", true);
+			anim.SetBool ("Jump", false);
+			anim.SetBool ("Walk", false);
+		}
+
+		if (rb2d.velocity.x != 0) {
+			anim.SetBool ("Idle", false);
+			anim.SetBool ("Jump", false);
+			anim.SetBool ("Walk", true);
 		}
 
 
@@ -57,7 +74,11 @@ public class FinnisMovement : MonoBehaviour {
 		if (jump) {
 			rb2d.AddForce (new Vector2 (0, jumpForce));
 			jump = false;
+
 		}
+
+
+
 	}
 
 	void Flip(){
