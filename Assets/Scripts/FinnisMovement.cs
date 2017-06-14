@@ -36,22 +36,32 @@ public class FinnisMovement : MonoBehaviour {
 			jump = true;
 		}
 
-		if (rb2d.velocity.y != 0f && rb2d.velocity.x == 0f) {
+		if (rb2d.velocity.y >= 0f && !grounded) {
 			anim.SetBool ("Idle", false);
 			anim.SetBool ("Jump", true);
 			anim.SetBool ("Walk", false);
+			anim.SetBool ("JumpDown", false);
 		}
 
-		if (rb2d.velocity == Vector2.zero) {
+		if (rb2d.velocity.y < 0f && !grounded) {
+			anim.SetBool ("Idle", false);
+			anim.SetBool ("Jump", false);
+			anim.SetBool ("Walk", false);
+			anim.SetBool ("JumpDown", true);
+		}
+
+		if (rb2d.velocity == Vector2.zero && grounded) {
 			anim.SetBool ("Idle", true);
 			anim.SetBool ("Jump", false);
 			anim.SetBool ("Walk", false);
+			anim.SetBool ("JumpDown", false);
 		}
 
-		if (rb2d.velocity.x != 0) {
+		if (rb2d.velocity.x != 0 && grounded) {
 			anim.SetBool ("Idle", false);
 			anim.SetBool ("Jump", false);
 			anim.SetBool ("Walk", true);
+			anim.SetBool ("JumpDown", false);
 		}
 
 
@@ -64,10 +74,10 @@ public class FinnisMovement : MonoBehaviour {
 
 		rb2d.velocity = new Vector2 (axis * velocity, rb2d.velocity.y);
 
-		if (axis > 0 && !facingRight) {
+		if ((axis == 1) && !facingRight) {
 			Flip ();
 		}
-		if (axis < 0 && !facingRight) {
+		else if ((axis == -1) && facingRight) {
 			Flip ();
 		}
 
@@ -76,18 +86,13 @@ public class FinnisMovement : MonoBehaviour {
 			jump = false;
 
 		}
-
-
-
 	}
 
 	void Flip(){
 
 		facingRight = !facingRight;
 
-		Vector3 finnisScale = transform.localScale;
-		finnisScale.x *= -1;
-		transform.localScale = finnisScale;
+		rb2d.transform.localScale = new Vector2 (- rb2d.transform.localScale.x, rb2d.transform.localScale.y);
 	}
 	
 }
