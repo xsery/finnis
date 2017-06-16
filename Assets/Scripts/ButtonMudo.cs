@@ -11,7 +11,10 @@ public class ButtonMudo : MonoBehaviour {
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
+<<<<<<< HEAD
         
+=======
+>>>>>>> origin/master
     }
 	
 	// Update is called once per frame
