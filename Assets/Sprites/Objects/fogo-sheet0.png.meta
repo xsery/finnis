@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 412e255b30b74bc469aa997abc6085aa
-timeCreated: 1497306981
+timeCreated: 1497646525
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -32,8 +32,6 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-    mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -49,13 +47,10 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -107,65 +102,49 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: fogo-sheet0_0
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 1002
-        width: 12
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_1
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 1011
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_2
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 939
-        width: 48
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_3
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 1008
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
     - serializedVersion: 2
       name: fogo-sheet0_4
       rect:
@@ -173,96 +152,24 @@ TextureImporter:
         x: 2
         y: 731
         width: 740
-        height: 263
+        height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_5
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 968
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fogo-sheet0_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 411
-        width: 735
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_7
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 647
-        width: 52
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_8
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 705
-        width: 28
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_9
-      rect:
-        serializedVersion: 2
         x: 0
-        y: 568
-        width: 28
-        height: 60
+        y: 437
+        width: 741
+        height: 292
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_10
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 423
-        width: 90
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fogo-sheet0_11
@@ -273,125 +180,24 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_12
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 428
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_13
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 428
-        width: 13
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_14
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 348
-        width: 37
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_15
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 427
-        width: 13
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_16
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 428
-        width: 21
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fogo-sheet0_17
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 143
-        width: 738
-        height: 250
+        width: 740
+        height: 282
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_18
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 390
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: fogo-sheet0_19
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 366
-        width: 36
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
       tessellationDetail: 0
     outline: []
-    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

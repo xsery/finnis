@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7cb5ec54b2b85b246996512364e76e20
-timeCreated: 1497302930
+timeCreated: 1497629749
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,8 +13,6 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-    mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -30,13 +28,10 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -88,6 +83,30 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -99,14 +118,12 @@ TextureImporter:
         y: 0
         width: 330
         height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.8451431, y: 0.59579897}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     outline: []
-    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

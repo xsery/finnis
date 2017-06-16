@@ -11,6 +11,7 @@ public class FinnisWakeUp : MonoBehaviour {
     // Use this for initialization
     void Start () {
         WakeUp = true;
+        Finnis.wakeup = WakeUp;
         anim = GetComponent<Animator>();
         StartCoroutine("acordaDoComa");
     }

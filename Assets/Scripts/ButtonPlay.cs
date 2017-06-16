@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class ButtonPlay : MonoBehaviour {
 
     public AudioSource button;
+    private Animator anim;
 
     // Use this for initialization
-    void Start () {
-		
-	}
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,5 +23,14 @@ public class ButtonPlay : MonoBehaviour {
     {
         button.Play();
         SceneManager.LoadScene("Scenes/Memories1");
+    }
+
+    void OnMouseEnter()
+    {
+        anim.SetBool("Play", true);
+    }
+    void OnMouseExit()
+    {
+        anim.SetBool("Play", false);
     }
 }
