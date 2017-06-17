@@ -7,7 +7,6 @@ public class FinnisMovement : MonoBehaviour
 {
 
 
-<<<<<<< HEAD
     public float velocity;
     public float jumpForce;
     public GameObject sangue;
@@ -21,19 +20,6 @@ public class FinnisMovement : MonoBehaviour
     public bool dead;
 
     private Transform groundCheck;
-=======
-	public float velocity;
-	public float jumpForce;
-    public GameObject sangue;
-    private Rigidbody2D rb2d;
-	private bool facingRight = true;
-	private bool jump;
-	private Animator anim;
-	private bool grounded = false;
-    public bool wakeup;
-    public bool discovery;
-    public bool dead;
->>>>>>> origin/master
 
 
     // Use this for initialization
@@ -44,17 +30,8 @@ public class FinnisMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         groundCheck = gameObject.transform.Find("GroundCheck");
 
-<<<<<<< HEAD
 
     }
-=======
-	// Use this for initialization
-	void Start () {
-        sangue.SetActive(false);
-        rb2d = GetComponent<Rigidbody2D> ();
-		anim = GetComponent<Animator> ();
-		groundCheck = gameObject.transform.Find ("GroundCheck");
->>>>>>> origin/master
 
     // Update is called once per frame
     void Update()
@@ -62,7 +39,6 @@ public class FinnisMovement : MonoBehaviour
 
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-<<<<<<< HEAD
         if (Input.GetButtonDown("Jump") && grounded && !wakeup && !discovery && !dead)
         {
             jump = true;
@@ -74,86 +50,47 @@ public class FinnisMovement : MonoBehaviour
             anim.SetBool("Jump", true);
             anim.SetBool("Walk", false);
             anim.SetBool("JumpDown", false);
-=======
-		if (Input.GetButtonDown ("Jump") && grounded && !wakeup && !discovery && !dead) {
-			jump = true;
-		}
-
-		if (rb2d.velocity.y >= 0f && !grounded && !wakeup && !discovery && !dead) {
-			anim.SetBool ("Idle", false);
-			anim.SetBool ("Jump", true);
-			anim.SetBool ("Walk", false);
-			anim.SetBool ("JumpDown", false);
->>>>>>> origin/master
             anim.SetBool("WakeUp", false);
             anim.SetBool("Discovery", false);
             anim.SetBool("Dead", false);
         }
 
-<<<<<<< HEAD
         if (rb2d.velocity.y < 0f && !grounded && !wakeup && !discovery && !dead)
         {
             anim.SetBool("Idle", false);
             anim.SetBool("Jump", false);
             anim.SetBool("Walk", false);
             anim.SetBool("JumpDown", true);
-=======
-		if (rb2d.velocity.y < 0f && !grounded && !wakeup && !discovery && !dead) {
-			anim.SetBool ("Idle", false);
-			anim.SetBool ("Jump", false);
-			anim.SetBool ("Walk", false);
-			anim.SetBool ("JumpDown", true);
->>>>>>> origin/master
             anim.SetBool("WakeUp", false);
             anim.SetBool("Discovery", false);
             anim.SetBool("Dead", false);
         }
 
-<<<<<<< HEAD
         if (rb2d.velocity == Vector2.zero && grounded && !wakeup && !discovery && !dead)
         {
             anim.SetBool("Idle", true);
             anim.SetBool("Jump", false);
             anim.SetBool("Walk", false);
             anim.SetBool("JumpDown", false);
-=======
-		if (rb2d.velocity == Vector2.zero && grounded && !wakeup && !discovery && !dead) {
-			anim.SetBool ("Idle", true);
-			anim.SetBool ("Jump", false);
-			anim.SetBool ("Walk", false);
-			anim.SetBool ("JumpDown", false);
->>>>>>> origin/master
             anim.SetBool("WakeUp", false);
             anim.SetBool("Discovery", false);
             anim.SetBool("Dead", false);
         }
 
-<<<<<<< HEAD
         if (rb2d.velocity.x != 0 && grounded && !wakeup && !discovery && !dead)
         {
             anim.SetBool("Idle", false);
             anim.SetBool("Jump", false);
             anim.SetBool("Walk", true);
             anim.SetBool("JumpDown", false);
-=======
-		if (rb2d.velocity.x != 0 && grounded && !wakeup && !discovery && !dead) {
-			anim.SetBool ("Idle", false);
-			anim.SetBool ("Jump", false);
-			anim.SetBool ("Walk", true);
-			anim.SetBool ("JumpDown", false);
->>>>>>> origin/master
             anim.SetBool("WakeUp", false);
             anim.SetBool("Discovery", false);
             anim.SetBool("Dead", false);
         }
     }
 
-<<<<<<< HEAD
     void FixedUpdate()
     {
-=======
-	void FixedUpdate(){
->>>>>>> origin/master
         if (!discovery && !wakeup && !dead)
         {
             float axis = Input.GetAxisRaw("Horizontal");
@@ -222,17 +159,6 @@ public class FinnisMovement : MonoBehaviour
         StartCoroutine("morte");
     }
 
-<<<<<<< HEAD
-=======
-		rb2d.transform.localScale = new Vector2 (- rb2d.transform.localScale.x, rb2d.transform.localScale.y);
-	}
-
-    public void PerdeVida()
-    {
-        StartCoroutine("morte");
-    }
-
->>>>>>> origin/master
     IEnumerator morte()
     {
         sangue.SetActive(true);

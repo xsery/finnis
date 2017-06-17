@@ -5,8 +5,11 @@ using UnityEngine;
 public class MoveNurse : MonoBehaviour {
 
 	public Rigidbody2D finnisRigidBody;
-
 	public Rigidbody2D nurseRigidBody;
+	//public Animator Anim;
+
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +21,11 @@ public class MoveNurse : MonoBehaviour {
 
 		if (finnisRigidBody.velocity.x != 0f) {
 			nurseRigidBody.velocity = new Vector2 (finnisRigidBody.velocity.x, nurseRigidBody.velocity.y);
+
 		} else {
 			nurseRigidBody.velocity = new Vector2 (0f,0f);
+			//Anim.SetBool("rednurseidlle", true);
+
 		}
 		
 	}

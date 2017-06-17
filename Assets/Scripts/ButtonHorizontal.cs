@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonHorizontal : MonoBehaviour {
 
     public ButtonHorizontal button;
+    public Plataform finnis;
 
     public bool isCima;
     public bool ButtonCima;
@@ -33,18 +34,6 @@ public class ButtonHorizontal : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter2D(Collider2D colisor)
-    {
-        if (colisor.gameObject.tag == "Player")
-        {
-            pisouPlataform = true;
-        }
-        else
-        {
-            pisouPlataform = false;
-        }
-    }
-
     void OnMouseDown()
     {
         if (ButtonCima && isCima)
@@ -70,8 +59,10 @@ public class ButtonHorizontal : MonoBehaviour {
         int cont;
         for (cont = 0; cont < quantidadeMovimento; cont++)
         {
-            if (pisouPlataform)
+            if (finnis.pisouPlataform)
+            {
                 Finnis.position = new Vector3(Finnis.position.x, Finnis.position.y + movimento);
+            }
             Plataform.position = new Vector3(Plataform.position.x, Plataform.position.y + movimento);
             ButonCima.position = new Vector3(ButonCima.position.x, ButonCima.position.y + movimento);
             ButtonBaixo.position = new Vector3(ButtonBaixo.position.x, ButtonBaixo.position.y + movimento);
