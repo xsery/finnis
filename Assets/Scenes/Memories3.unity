@@ -432,7 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   risada: {fileID: 966056334}
   timeBefore: 0
-  timeDuring: 4
+  timeDuring: 3.5
   timeAfter: 2.9
   level: 7
 --- !u!95 &966056336

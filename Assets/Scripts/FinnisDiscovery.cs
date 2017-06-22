@@ -6,25 +6,34 @@ public class FinnisDiscovery : MonoBehaviour {
     public bool Discovery;
     public FinnisMovement Finnis;
     private Animator anim;
+    public bool pause;
 
     // Use this for initialization
     void Start()
     {
-        Discovery = true;
         anim = GetComponent<Animator>();
-        StartCoroutine("descoberta");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Finnis.discovery = Discovery;
+        
+    }
+
+    public void discovery()
+    {
+        StartCoroutine("descoberta");
+        
     }
 
     IEnumerator descoberta()
-    { 
+    {
+        
         Discovery = true;
-        yield return new WaitForSeconds(4.3f);
+        Finnis.discovery = Discovery;
+        yield return new WaitForSeconds(4.2f);
         Discovery = false;
+        Finnis.discovery = Discovery;
+
     }
 }

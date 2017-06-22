@@ -10,6 +10,7 @@ public class ButtonVertical : MonoBehaviour {
     public bool isLeft;
     public bool ButtonLeft;
     public bool pisouPlataform;
+    private bool funcionando;
 
     public Transform Finnis;
     public Transform Plataform;
@@ -26,6 +27,7 @@ public class ButtonVertical : MonoBehaviour {
     void Start()
     {
         isLeft = false;
+        funcionando = false;
     }
 
     // Update is called once per frame
@@ -56,16 +58,24 @@ public class ButtonVertical : MonoBehaviour {
 
     IEnumerator actionButton()
     {
-        int cont;
-        for (cont = 0; cont < quantidadeMovimento; cont++)
+        if (!funcionando)
         {
-            if(finnis.pisouPlataform){
-                Finnis.position = new Vector3(Finnis.position.x + movimento, Finnis.position.y);
+            funcionando = true;
+            button.funcionando = funcionando;
+            int cont;
+            for (cont = 0; cont < quantidadeMovimento; cont++)
+            {
+                if (finnis.pisouPlataform)
+                {
+                    Finnis.position = new Vector3(Finnis.position.x + movimento, Finnis.position.y);
+                }
+                Plataform.position = new Vector3(Plataform.position.x + movimento, Plataform.position.y);
+                ButonLeft.position = new Vector3(ButonLeft.position.x + movimento, ButonLeft.position.y);
+                ButtonRight.position = new Vector3(ButtonRight.position.x + movimento, ButtonRight.position.y);
+                yield return new WaitForSeconds(tempoEspera);
             }
-            Plataform.position = new Vector3(Plataform.position.x + movimento, Plataform.position.y);
-            ButonLeft.position = new Vector3(ButonLeft.position.x + movimento, ButonLeft.position.y);
-            ButtonRight.position = new Vector3(ButtonRight.position.x + movimento, ButtonRight.position.y);
-            yield return new WaitForSeconds(tempoEspera);
+            funcionando = false;
+            button.funcionando = funcionando;
         }
     }
 }

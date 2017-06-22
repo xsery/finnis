@@ -5,7 +5,7 @@ using UnityEngine;
 public class DutoAr : MonoBehaviour {
 
 	public Rigidbody2D finnisRigBody;
-
+    public FinnisMovement finnisMovement;
 	private Rigidbody2D rb2D;
 	private float posicaoDuto;
 	// Use this for initialization
@@ -20,16 +20,23 @@ public class DutoAr : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (finnisMovement.grounded)
+        {
+            finnisRigBody.gravityScale = 1f;
+        }
 		
 	}
 
 	void OnMouseDown(){
-		if ((finnisRigBody.position.x > (posicaoDuto - 0.80f)) && (finnisRigBody.position.x < (posicaoDuto + 0.80f))){
-			finnisRigBody.gravityScale = 0.05f;
-			finnisRigBody.transform.position = new Vector2 (finnisRigBody.position.x, finnisRigBody.position.y + 1f);
+        if (finnisRigBody.position.y < 3f)
+        {
+            if ((finnisRigBody.position.x > (posicaoDuto - 0.80f)) && (finnisRigBody.position.x < (posicaoDuto + 0.80f)))
+            {
+                finnisRigBody.gravityScale = 0.05f;
+                finnisRigBody.transform.position = new Vector2(finnisRigBody.position.x, finnisRigBody.position.y + 1f);
 
-		}
+            }
+        }
 	}
 
 }

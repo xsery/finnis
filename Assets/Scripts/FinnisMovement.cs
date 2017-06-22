@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class FinnisMovement : MonoBehaviour
 {
 
-
     public float velocity;
     public float jumpForce;
     public GameObject sangue;
@@ -14,7 +13,7 @@ public class FinnisMovement : MonoBehaviour
     private bool facingRight = true;
     private bool jump;
     private Animator anim;
-    private bool grounded = false;
+    public bool grounded = false;
     public bool wakeup;
     public bool discovery;
     public bool dead;
@@ -29,8 +28,6 @@ public class FinnisMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         groundCheck = gameObject.transform.Find("GroundCheck");
-
-
     }
 
     // Update is called once per frame
