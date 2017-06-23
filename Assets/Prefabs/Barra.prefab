@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50616217321134434}
   - component: {fileID: 114761479206199028}
   - component: {fileID: 58309384476039996}
+  - component: {fileID: 114223286454932868}
   m_Layer: 0
   m_Name: Serra
   m_TagString: Morte
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806667453318552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: -0.83, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4298488740916722}
@@ -102,12 +103,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07252872, y: 0.021991432}
   serializedVersion: 2
   m_Radius: 0.91334724
+--- !u!114 &114223286454932868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1264081572494486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c59f851e4878b478ebcf9721ad3aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114761479206199028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanciaSerra: 4.16
+  posicaoFinal: 3.3
 --- !u!212 &212564701592853454
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -151,7 +164,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: c7e3eba33a5fb9a40931f477fb19c52d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 33086551dff015e40b15148b6f0b321f
-timeCreated: 1497307376
+timeCreated: 1498178310
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,8 +14,6 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-    mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -31,13 +29,10 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -96,32 +91,29 @@ TextureImporter:
       name: alavancaazul-sheet0_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 102
-        width: 54
-        height: 154
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2
+        y: 104
+        width: 51
+        height: 150
+      alignment: 9
+      pivot: {x: 0.18826678, y: 0.017845456}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: alavancaazul-sheet0_1
       rect:
         serializedVersion: 2
         x: 56
-        y: 102
-        width: 56
-        height: 154
+        y: 104
+        width: 51
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     outline: []
-    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

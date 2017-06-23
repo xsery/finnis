@@ -24,25 +24,13 @@ public class MemoriesSilence : MonoBehaviour {
         if (level == 3) {
             SceneManager.LoadScene("Scenes/Stage3");
         }
-        else {
-            if (level == 8)
-            {
-                SceneManager.LoadScene("Scenes/Stage8");
-            }
-            else
-            {
-                if (level == 9.1f)
-                {
-                    SceneManager.LoadScene("Scenes/Stage9.1");
-                }
-                else
-                {
-                    if (level == 9.2f)
-                    {
-                        SceneManager.LoadScene("Scenes/Stage9.2");
-                    }
-                }
-            }
+        else if (level == 8)
+        {
+            SceneManager.LoadScene("Scenes/Stage8");
+        }
+        else
+        {
+            GameManager.Instance.LoadFinalStage();
         }
     }
 }

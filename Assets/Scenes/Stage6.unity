@@ -470,7 +470,7 @@ MonoBehaviour:
   spirits1: {fileID: 1568033165}
   spirits2: {fileID: 680720307}
   maoNaParede: {fileID: 2033794955}
-  OK: {fileID: 350423605}
+  OK: {fileID: 0}
   mundoReal: {fileID: 350423606}
   mundoPesadelo: {fileID: 1474196088}
   remedio: {fileID: 203146620}
@@ -611,7 +611,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 350423604}
-  - component: {fileID: 350423605}
   - component: {fileID: 350423606}
   m_Layer: 8
   m_Name: Background
@@ -636,20 +635,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &350423605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 350423603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f65e1c71ad8713499cbb97c48c1a0d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parte1: 0
-  parte2: 0
-  door: {fileID: 1678373413}
 --- !u!82 &350423606
 AudioSource:
   m_ObjectHideFlags: 0
@@ -983,7 +968,7 @@ BoxCollider2D:
   m_Offset: {x: -0.05386257, y: 0.11801559}
   m_SpriteTilingProperty:
     border: {x: 0.19, y: 0.26, z: 0.13, w: 0.06}
-    pivot: {x: 0.5201106, y: 0.5928899}
+    pivot: {x: 0.5, y: 0.62}
     oldSize: {x: 2.37, y: 0.93}
     newSize: {x: 2.77, y: 1.76}
     adaptiveTilingThreshold: 0.5
@@ -1047,7 +1032,7 @@ BoxCollider2D:
   m_Offset: {x: 0.005701363, y: 0.03812602}
   m_SpriteTilingProperty:
     border: {x: 0.19, y: 0.26, z: 0.13, w: 0.06}
-    pivot: {x: 0.5201106, y: 0.5928899}
+    pivot: {x: 0.5, y: 0.62}
     oldSize: {x: 2.37, y: 0.93}
     newSize: {x: 2.77, y: 1.76}
     adaptiveTilingThreshold: 0.5
@@ -1628,7 +1613,7 @@ MonoBehaviour:
   contagemSangue: {fileID: 538940097}
   nome: RedNurse
   nurse: {fileID: 1533884645}
-  fase: {fileID: 350423605}
+  fase: {fileID: 0}
 --- !u!1 &612570612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,11 +2328,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4493998308017386, guid: e4e1ae857f5cd3146a8480d4af5a91ce, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.351
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4493998308017386, guid: e4e1ae857f5cd3146a8480d4af5a91ce, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.989
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 4493998308017386, guid: e4e1ae857f5cd3146a8480d4af5a91ce, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2492,12 +2477,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4247360261440976, guid: 68ca82d94ba7a3e4499f2b23d6281ef4,
     type: 2}
   m_PrefabInternal: {fileID: 708372163}
---- !u!114 &1678373413 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114099842340132678, guid: 68ca82d94ba7a3e4499f2b23d6281ef4,
-    type: 2}
-  m_PrefabInternal: {fileID: 708372163}
-  m_Script: {fileID: 11500000, guid: be3543542c24f2043b890afa59ac4d7c, type: 3}
 --- !u!1 &1709477218 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1623441958783984, guid: 6af82d74d5ec5434c973eb516665086e,
@@ -2634,7 +2613,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1047337191739314, guid: 70d6149f6face3c4394ceab68d3cf547, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70d6149f6face3c4394ceab68d3cf547, type: 2}

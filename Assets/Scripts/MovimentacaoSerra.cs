@@ -9,6 +9,10 @@ public class MovimentacaoSerra : MonoBehaviour {
 
 	private Rigidbody2D rb2D;
 	private float posicaoInicial;
+	private float mudaPosicao = 0.03f;
+
+
+	public float posicaoFinal;
 
 
 
@@ -17,22 +21,23 @@ public class MovimentacaoSerra : MonoBehaviour {
 
 		rb2D = GetComponent<Rigidbody2D> ();
 		posicaoInicial = rb2D.position.x;
-		rb2D.velocity = new Vector2 (1.5f, rb2D.velocity.y);
 
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		rb2D.transform.Rotate (0,0, (700 * Time.deltaTime));
+		transform.Rotate (0,0, (700 * Time.deltaTime));
 
-		if (rb2D.position.x > (posicaoInicial + distanciaSerra)) {
-			rb2D.velocity = new Vector2 (-1.5f , rb2D.velocity.y);
+		transform.position = new Vector2 (rb2D.position.x + mudaPosicao, rb2D.position.y);
 
-		}if (rb2D.position.x < (posicaoInicial - distanciaSerra)) {
-			rb2D.velocity = new Vector2 (1.5f, rb2D.velocity.y);
+        if (rb2D.position.x > posicaoFinal) {
+			mudaPosicao = mudaPosicao * -1;
+		} 
 
-		}
+		if (rb2D.position.x < -posicaoFinal) {
+			mudaPosicao = mudaPosicao * -1;
+		}	
 
 	}
 }

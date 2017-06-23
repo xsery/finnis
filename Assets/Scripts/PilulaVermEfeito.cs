@@ -13,6 +13,8 @@ public class PilulaVermEfeito : MonoBehaviour
     public GameObject Mao;
     public GameObject spirits1;
     public GameObject spirits2;
+    public Spirits spirits01;
+    public Spirits spirits02;
     public AudioSource mundoReal;
     public AudioSource mundoPesadelo;
     public AudioSource remedio;
@@ -27,6 +29,7 @@ public class PilulaVermEfeito : MonoBehaviour
         spirits2.SetActive(false);
         pesadelo = false;
 		fundoDoPesadelo.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -50,6 +53,8 @@ public class PilulaVermEfeito : MonoBehaviour
             door.doorOpen();
             spirits1.SetActive(true);
             spirits2.SetActive(true);
+            spirits01.Fantasma2Fase();
+            spirits02.Fantasma2Fase();
         }
 
         if (coll.gameObject.name == "Stage02")

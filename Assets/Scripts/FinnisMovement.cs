@@ -35,6 +35,7 @@ public class FinnisMovement : MonoBehaviour
     {
 
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+		//grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Plataforma"));
 
         if (Input.GetButtonDown("Jump") && grounded && !wakeup && !discovery && !dead)
         {

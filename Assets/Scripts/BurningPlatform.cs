@@ -33,9 +33,9 @@ public class BurningPlatform : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
 			StartCoroutine ("StartBurn");
-		}
-		if (movableUp) {
-			goUp = true;
+			if (movableUp) {
+				goUp = true;
+			}
 		}
 	}
 
